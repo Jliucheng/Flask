@@ -1,0 +1,338 @@
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask
+$ git init                                                                                                              Initialized empty Git repository in D:/python/pycharm/Flask/.git/
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git remote add github git@github.com:Jliucheng/Flask.git                                                              
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile
+        Pipfile.lock
+        hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git add hello.py
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile
+        Pipfile.lock
+
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git commit -m "add hello.py"
+[master (root-commit) efba0b8] add hello.py
+ 1 file changed, 13 insertions(+)
+ create mode 100644 hello.py
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile
+        Pipfile.lock
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git remote
+github
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push github master
+To github.com:Jliucheng/Flask.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:Jliucheng/Flask.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push --help
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push github
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream github master
+
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push --set-upstream github master
+To github.com:Jliucheng/Flask.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:Jliucheng/Flask.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile
+        Pipfile.lock
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ ls
+Flask/  hello.py  Pipfile  Pipfile.lock
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git add hello.py
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile
+        Pipfile.lock
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git add Pipfile
+warning: LF will be replaced by CRLF in Pipfile.
+The file will have its original line endings in your working directory
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Pipfile
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile.lock
+
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git commit -m "add pipfile"
+[master a04d959] add pipfile
+ 1 file changed, 13 insertions(+)
+ create mode 100644 Pipfile
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+        Pipfile.lock
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git branch
+* master
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git log
+commit a04d95949ce74f5da516d1f924510ed34d1217f2 (HEAD -> master)
+Author: Jliucheng <2168187627@qq.com>
+Date:   Sat Nov 30 19:34:26 2019 +0800
+
+    add pipfile
+
+commit efba0b83b27ef24b914adf622c6ba1f74071c946
+Author: Jliucheng <2168187627@qq.com>
+Date:   Sat Nov 30 19:29:41 2019 +0800
+
+    add hello.py
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push github master
+To github.com:Jliucheng/Flask.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:Jliucheng/Flask.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git remote
+github
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git pull --rebase github master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:Jliucheng/Flask
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> github/master
+First, rewinding head to replay your work on top of it...
+Applying: add hello.py
+Applying: add pipfile
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push github master                                                                                                Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 923 bytes | 307.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To github.com:Jliucheng/Flask.git
+   8f6bb88..5496d01  master -> master
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git log
+commit 5496d0128dc76e56a5387121f80258f8681d2d70 (HEAD -> master, github/master)
+Author: Jliucheng <2168187627@qq.com>
+Date:   Sat Nov 30 19:34:26 2019 +0800
+
+    add pipfile
+
+commit 091ef478f2f1acc46500970ac0be74ba36e86dbf
+Author: Jliucheng <2168187627@qq.com>
+Date:   Sat Nov 30 19:29:41 2019 +0800
+
+    add hello.py
+
+commit 8f6bb88881038418fd5b60151e462ba8b367cf53
+Author: Jliucheng <48408527+Jliucheng@users.noreply.github.com>
+Date:   Sat Nov 30 19:27:15 2019 +0800
+
+    Initial commit
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ ls
+Flask/  hello.py  Pipfile  Pipfile.lock  README.md
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git add Pipfile.lock
+warning: LF will be replaced by CRLF in Pipfile.lock.
+The file will have its original line endings in your working directory
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Pipfile.lock
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .flaskenv
+        Flask/
+
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git add Flask/ .env .flaskenv
+warning: adding embedded git repository: Flask
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Flask
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Flask
+hint:
+hint: See "git help submodule" for more information.
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .env
+        new file:   .flaskenv
+        new file:   Flask
+        new file:   Pipfile.lock
+
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git restore --staged Flask
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .env
+        new file:   .flaskenv
+        new file:   Pipfile.lock
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Flask/
+
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git commit -m "add .env .flaskenv pipfile.lock"
+[master 2cbe90d] add .env .flaskenv pipfile.lock
+ 3 files changed, 97 insertions(+)
+ create mode 100644 .env
+ create mode 100644 .flaskenv
+ create mode 100644 Pipfile.lock
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$ git push github master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 2.33 KiB | 795.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:Jliucheng/Flask.git
+   5496d01..2cbe90d  master -> master
+
+jiang@DESKTOP-J45LCPO MINGW64 /d/python/pycharm/Flask (master)
+$
